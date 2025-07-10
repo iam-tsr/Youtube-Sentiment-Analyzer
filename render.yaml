@@ -6,7 +6,7 @@ services:
     region: oregon
     plan: free
     branch: main
-    dockerfilePath: ./frontend/Dockerfile
+    dockerfilePath: /frontend/Dockerfile
 
   - type: web
     name: backend
@@ -15,4 +15,4 @@ services:
     region: oregon
     plan: free
     branch: main
-    dockerfilePath: ./backend/Dockerfile
+    dockerfilePath: /backend/Dockerfile
