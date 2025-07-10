@@ -7,14 +7,12 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 origins = [
-    "http://localhost:5173",   # Vite dev server
-    "http://127.0.0.1:5173",
-    "http://localhost:3000",   # in case you're using create-react-app
+    "http://localhost:3000"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,          # or ["*"] for all origins (not recommended in prod)
+    allow_origins=origins,        
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
