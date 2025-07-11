@@ -1,5 +1,4 @@
 fastapi
-numpy
 uvicorn
 sqlalchemy
 psycopg2-binary
@@ -10,6 +9,3 @@ requests
 dotenv
 python-multipart
 torch 
-torchvision 
-torchaudio 
---index-url https://download.pytorch.org/whl/cpu
