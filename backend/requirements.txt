@@ -1,5 +1,5 @@
 fastapi
-torch
+numpy
 uvicorn
 sqlalchemy
 psycopg2-binary
