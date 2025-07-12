@@ -6,7 +6,7 @@ load_dotenv()
 
 API_KEY = os.getenv("YOUTUBE_API_KEY")
 
-def fetch_comments(video_id, max_results=50):
+def fetch_comments(video_id, max_results=10):
     url = "https://www.googleapis.com/youtube/v3/commentThreads"
     params = {
         "part": "snippet",
