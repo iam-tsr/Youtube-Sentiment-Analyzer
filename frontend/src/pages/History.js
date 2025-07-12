@@ -7,7 +7,7 @@ export default function History() {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const res = await fetch("youtube-sentiment-analyzer-production.up.railway.app/history", {
+        const res = await fetch("https://youtube-sentiment-analyzer-production.up.railway.app/history", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("access_token")}`,
           },
