@@ -8,7 +8,7 @@ export default function Dashboard() {
 
   const handleAnalyze = async (videoId) => {
   try {
-    const res = await fetch(`youtube-sentiment-analyzer-production.up.railway.app/analyze/${videoId}`, {
+    const res = await fetch(`https://youtube-sentiment-analyzer-production.up.railway.app/analyze/${videoId}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("access_token")}`,
