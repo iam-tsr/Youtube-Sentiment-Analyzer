@@ -8,6 +8,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 origins = [
     "http://localhost:3000"
+    "https://youtube-frontend-eury.onrender.com"
 ]
 
 app.add_middleware(
