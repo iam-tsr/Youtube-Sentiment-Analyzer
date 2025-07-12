@@ -24,7 +24,7 @@ export default function Login() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("youtube-sentiment-analyzer-production.up.railway.app/login", {
+      const res = await fetch("https://youtube-sentiment-analyzer-production.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
