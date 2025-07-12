@@ -24,7 +24,7 @@ export default function Signup() {
     setIsLoading(true)
 
     try {
-      const res = await fetch("youtube-sentiment-analyzer-production.up.railway.app/signup", {
+      const res = await fetch("https://youtube-sentiment-analyzer-production.up.railway.app/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
