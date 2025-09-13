@@ -5,7 +5,7 @@ sqlalchemy
 psycopg2-binary
 python-jose
 passlib[bcrypt]
-transformers
 requests
 dotenv
 python-multipart
+gradio-client
